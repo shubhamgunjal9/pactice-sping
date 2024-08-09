@@ -1,0 +1,18 @@
+package net.nebula.service;
+
+import org.springframework.stereotype.Service;
+
+import net.nebula.entity.Employee;
+
+@Service
+public class EmployeeService {
+	
+	
+	public void save(Employee employee) {
+		
+		System.out.println("implemented save operation");
+		
+	}
+	
+
+}

@@ -1,0 +1,15 @@
+package net.nebula.entity;
+
+
+
+public class Employee {
+	
+	private String name;
+	private String pass;
+	private String contact;
+	private String address;
+	
+	
+	
+
+}

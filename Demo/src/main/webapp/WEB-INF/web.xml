@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+	<display-name>TeGGGIWebService</display-name>
+		<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+  <listener>
+	<listener-class>com.sun.xml.ws.transport.http.servlet.WSServletContextListener</listener-class>
+  </listener>  
+  <servlet>
+    <display-name>TeGGGIServiceRequestHandler</display-name>
+    <servlet-name>TeGGGIServiceRequestHandler</servlet-name>
+    <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+	<load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TeGGGIServiceRequestHandler</servlet-name>
+    <url-pattern>/services/TeGGGIServiceRequestHandler</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>TeGGGIWebServiceInitilizer</servlet-name>
+    <servlet-class>com.bmw.tegggi.tegggiinterface.common.TeGGGIWebServiceInitilizer</servlet-class>
+    <init-param>
+      <param-name>log4j-properties-location</param-name>
+      <param-value>WEB-INF/log4j.properties</param-value>
+    </init-param>
+    <init-param>
+      <param-name>config-properties-location</param-name>
+      <param-value>WEB-INF/config.properties</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+</web-app>

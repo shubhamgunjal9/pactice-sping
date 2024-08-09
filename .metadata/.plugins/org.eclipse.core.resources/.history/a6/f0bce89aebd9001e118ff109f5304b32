@@ -1,0 +1,15 @@
+package net.nebula.config;
+
+import org.springframework.context.annotation.Configuration;
+
+import net.nebula.service.CashPay;
+import net.nebula.service.Payment;
+
+@Configuration
+public class BeanConfig {
+	
+	public Payment getCashPay() {
+		return new CashPay();
+	}
+
+}

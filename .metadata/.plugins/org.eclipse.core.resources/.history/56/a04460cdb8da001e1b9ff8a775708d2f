@@ -1,0 +1,5 @@
+package net.nebula.entity;
+
+public class Employee {
+
+}

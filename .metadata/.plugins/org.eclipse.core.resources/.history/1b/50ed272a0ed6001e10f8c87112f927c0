@@ -1,0 +1,5 @@
+package com.nebula.entity;
+
+public class Student {
+
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean name="emp1" class="com.project.Employee">
+		<property name="empId" value="1"></property>
+		<property name="empName" value="shubham"></property>
+		<property name="contact" value="8208090110"></property>
+	</bean>
+	<bean name="emp2" class="com.project.Employee">
+		<constructor-arg value="10" ></constructor-arg>
+		<constructor-arg value="siddhartha"></constructor-arg>
+		<constructor-arg value="9373233251" ></constructor-arg>
+	</bean>
+</beans>

@@ -1,0 +1,18 @@
+package net.nebula.controller;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ApiController {
+	
+	
+//	public ResponseEntity<String> getMsg() {
+//		
+//		return new ResponseEntity<>("hello", HttpStatus);
+//	}
+//	
+	
+
+}

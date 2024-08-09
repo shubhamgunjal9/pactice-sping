@@ -1,0 +1,6 @@
+package net.nebula.service;
+
+public interface Payment {
+	
+	public String pay();
+}

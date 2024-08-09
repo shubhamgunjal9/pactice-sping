@@ -1,0 +1,5 @@
+package net.nebula.config;
+
+public class BeanConfig {
+
+}
